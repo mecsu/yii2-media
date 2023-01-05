@@ -521,6 +521,7 @@ class Module extends BaseModule
         $max_upload_limit = StringHelper::sizeToBytes(\ini_get('upload_max_filesize'));
         $max_post_limit = StringHelper::sizeToBytes(\ini_get('post_max_size'));
 
+        $limit = $max_upload_limit;
         if ($max_upload_limit > $max_post_limit)
             Yii::warning('PHP.ini\'s \'post_max_size\' is less than \'upload_max_filesize\'.', __METHOD__);
 

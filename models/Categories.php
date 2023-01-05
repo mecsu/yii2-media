@@ -145,10 +145,14 @@ class Categories extends ActiveRecord
     }
 
     /**
-     * @return object of \yii\db\ActiveQuery
+     * Return the query relation for author who create model or value.
+     *
+     * @return int|\yii\db\ActiveQuery
      */
     public function getCreatedBy()
     {
+        if (class_exists('\app\modules\users\models\Users'))
+            return $this->hasOne(\app\modules\users\models\Users::class, ['user_id' => 'created_by']);
         if (class_exists('\wdmg\users\models\Users'))
             return $this->hasOne(\wdmg\users\models\Users::class, ['id' => 'created_by']);
         else
@@ -156,11 +160,16 @@ class Categories extends ActiveRecord
     }
 
     /**
-     * @return object of \yii\db\ActiveQuery
+     * Return the query relation for author who update model or value.
+     *
+     * @return int|\yii\db\ActiveQuery
      */
     public function getUpdatedBy()
     {
-        if (class_exists('\wdmg\users\models\Users'))
+        if (class_exists('\app\modules\users\models\Users'))
+            return $this->hasOne(\app\modules\users\models\Users::class, ['user_id' => 'updated_by']);
+        
+            if (class_exists('\wdmg\users\models\Users'))
             return $this->hasOne(\wdmg\users\models\Users::class, ['id' => 'updated_by']);
         else
             return $this->updated_by;

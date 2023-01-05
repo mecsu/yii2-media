@@ -257,6 +257,9 @@ class Media extends ActiveRecord
      */
     public function getCreatedBy()
     {
+        if (class_exists('\app\modules\users\models\Users'))
+            return $this->hasOne(\app\modules\users\models\Users::class, ['user_id' => 'created_by']);
+
         if (class_exists('\wdmg\users\models\Users'))
             return $this->hasOne(\wdmg\users\models\Users::class, ['id' => 'created_by']);
         else
@@ -268,6 +271,9 @@ class Media extends ActiveRecord
      */
     public function getUpdatedBy()
     {
+        if (class_exists('\app\modules\users\models\Users'))
+            return $this->hasOne(\app\modules\users\models\Users::class, ['user_id' => 'updated_by']);
+
         if (class_exists('\wdmg\users\models\Users'))
             return $this->hasOne(\wdmg\users\models\Users::class, ['id' => 'updated_by']);
         else
