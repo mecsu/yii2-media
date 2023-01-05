@@ -1,6 +1,6 @@
 <?php
 
-namespace wdmg\media\controllers;
+namespace mecsu\media\controllers;
 
 use wdmg\helpers\StringHelper;
 use Yii;
@@ -12,9 +12,9 @@ use yii\web\UploadedFile;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
-use wdmg\media\models\Media;
-use wdmg\media\models\MediaSearch;
-use wdmg\media\models\Categories;
+use mecsu\media\models\Media;
+use mecsu\media\models\MediaSearch;
+use mecsu\media\models\Categories;
 
 /**
  * ListController implements the CRUD actions for Media model.

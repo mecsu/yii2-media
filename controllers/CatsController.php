@@ -1,6 +1,6 @@
 <?php
 
-namespace wdmg\media\controllers;
+namespace mecsu\media\controllers;
 
 use Yii;
 use yii\db\ActiveRecord;
@@ -8,8 +8,8 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
-use wdmg\media\models\Categories;
-use wdmg\media\models\CategoriesSearch;
+use mecsu\media\models\Categories;
+use mecsu\media\models\CategoriesSearch;
 
 /**
  * CatsController implements the CRUD actions for Categories model.

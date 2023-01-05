@@ -1,11 +1,11 @@
 <?php
 
-namespace wdmg\media;
+namespace mecsu\media;
 use yii\web\AssetBundle;
 
 class MediaAsset extends AssetBundle
 {
-    public $sourcePath = '@vendor/wdmg/yii2-media/assets';
+    public $sourcePath = '@vendor/mecsu/yii2-media/assets';
 
     public $css = [
         YII_ENV_DEV ? 'css/media.css' : 'css/media.min.css'

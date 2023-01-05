@@ -1,15 +1,15 @@
 <?php
 
-namespace wdmg\media\models;
+namespace mecsu\media\models;
 
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use wdmg\media\models\Media;
-use wdmg\media\models\Categories;
+use mecsu\media\models\Media;
+use mecsu\media\models\Categories;
 
 /**
- * MediaSearch represents the model behind the search form of `wdmg\media\models\Media`.
+ * MediaSearch represents the model behind the search form of `mecsu\media\models\Media`.
  */
 class MediaSearch extends Media
 {

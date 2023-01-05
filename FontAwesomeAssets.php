@@ -1,7 +1,7 @@
 <?php
 
 
-namespace wdmg\media;
+namespace mecsu\media;
 
 /**
  * @author          Alexsander Vyshnyvetskyy <alex.vyshnyvetskyy@gmail.com>

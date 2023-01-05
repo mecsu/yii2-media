@@ -1,23 +1,20 @@
 {
-  "name": "wdmg/yii2-media",
+  "name": "mecsu/yii2-media",
   "description": "Media library",
-  "keywords": ["yii2", "yii2-media", "media", "library", "manager", "wdmg"],
+  "keywords": ["yii2", "yii2-media", "media", "library", "manager"],
   "type": "yii2-extension",
   "license": "MIT",
   "version": "1.0.6",
-  "homepage": "https://github.com/wdmg/yii2-media",
-  "support": {
-    "source": "https://github.com/wdmg/yii2-media",
-    "issues": "https://github.com/wdmg/yii2-media/issues"
-  },
   "authors": [
     {
-      "name": "Alexsander Vyshnyvetskyy",
-      "email": "alex.vyshnyvetskyy@gmail.com"
-    },
+      "name": "Xuan Nguyen",
+      "email": "xuanhn.vt@gmail.com"
+    }
+  ],
+  "repositories":[
     {
-      "name": "W.D.M.Group, Ukraine",
-      "email": "wdmg.com.ua@gmail.com"
+        "type": "git",
+        "url": "https://github.com/mecsu/yii2-media"
     }
   ],
   "require": {
@@ -30,7 +27,7 @@
   "minimum-stability": "dev",
   "autoload": {
     "psr-4": {
-      "wdmg\\media\\": ""
+      "mecsu\\media\\": ""
     }
   },
   "extra": {

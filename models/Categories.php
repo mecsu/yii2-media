@@ -1,6 +1,6 @@
 <?php
 
-namespace wdmg\media\models;
+namespace mecsu\media\models;
 
 use Yii;
 use yii\db\Expression;

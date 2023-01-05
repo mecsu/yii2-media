@@ -1,6 +1,6 @@
 <?php
 
-namespace wdmg\media\models;
+namespace mecsu\media\models;
 
 use Yii;
 use yii\db\Expression;
@@ -14,7 +14,7 @@ use yii\behaviors\TimestampBehavior;
 use yii\behaviors\BlameableBehavior;
 use yii\behaviors\SluggableBehavior;
 use wdmg\validators\JsonValidator;
-use wdmg\media\models\Categories;
+use mecsu\media\models\Categories;
 
 /**
  * This is the model class for table "{{%media}}".

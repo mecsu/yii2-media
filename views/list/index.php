@@ -9,7 +9,7 @@ use wdmg\widgets\SelectInput;
 
 /* @var $this yii\web\View */
 
-$bundle = \wdmg\media\MediaAsset::register($this);
+$bundle = \mecsu\media\MediaAsset::register($this);
 
 $this->title = Yii::t('app/modules/media', 'Media library');
 $this->params['breadcrumbs'][] = $this->title;

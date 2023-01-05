@@ -6,9 +6,9 @@ use yii\widgets\ActiveForm;
 use wdmg\widgets\SelectInput;
 
 /* @var $this yii\web\View */
-/* @var $model wdmg\media\models\Media */
+/* @var $model mecsu\media\models\Media */
 
-\wdmg\media\FontAwesomeAssets::register($this);
+\mecsu\media\FontAwesomeAssets::register($this);
 
 ?>
 <div class="media-upload">

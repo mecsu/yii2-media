@@ -3,7 +3,7 @@
 use yii\helpers\Html;
 
 /* @var $this yii\web\View */
-/* @var $model wdmg\media\models\Categories */
+/* @var $model mecsu\media\models\Categories */
 
 $this->title = Yii::t('app/modules/media', 'Updating category: {name}', [
     'name' => $model->name,

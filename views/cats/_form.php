@@ -6,7 +6,7 @@ use yii\widgets\ActiveForm;
 use wdmg\widgets\SelectInput;
 
 /* @var $this yii\web\View */
-/* @var $model wdmg\media\models\Categories */
+/* @var $model mecsu\media\models\Categories */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 

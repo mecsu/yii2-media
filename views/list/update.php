@@ -6,10 +6,10 @@ use yii\widgets\ActiveForm;
 use wdmg\widgets\SelectInput;
 
 /* @var $this yii\web\View */
-/* @var $model wdmg\media\models\Media */
+/* @var $model mecsu\media\models\Media */
 /* @var $form yii\widgets\ActiveForm */
 
-$bundle = \wdmg\media\MediaAsset::register($this);
+$bundle = \mecsu\media\MediaAsset::register($this);
 
 $this->title = Yii::t('app/modules/media', 'Updating media: {name}', [
     'name' => $model->name,

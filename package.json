@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wdmg/yii2-media.git"
+    "url": "git+https://github.com/mecsu/yii2-media.git"
   },
   "dependencies": {
   },
@@ -28,7 +28,7 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/wdmg/yii2-media/issues"
+    "url": "https://github.com/mecsu/yii2-media/issues"
   },
-  "homepage": "https://github.com/wdmg/yii2-media#readme"
+  "homepage": "https://github.com/mecsu/yii2-media#readme"
 }

@@ -5,7 +5,7 @@ use yii\helpers\Url;
 use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
-/* @var $model wdmg\media\models\Categories */
+/* @var $model mecsu\media\models\Categories */
 
 $this->title = Yii::t('app/modules/media', 'View category');
 $this->params['breadcrumbs'][] = ['label' => Yii::t('app/modules/media', 'Media library'), 'url' => ['list/index']];

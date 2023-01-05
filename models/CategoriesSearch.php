@@ -1,13 +1,13 @@
 <?php
 
-namespace wdmg\media\models;
+namespace mecsu\media\models;
 
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use wdmg\media\models\Categories;
+use mecsu\media\models\Categories;
 
 /**
- * CategoriesSearch represents the model behind the search form of `wdmg\media\models\Categories`.
+ * CategoriesSearch represents the model behind the search form of `mecsu\media\models\Categories`.
  */
 class CategoriesSearch extends Categories
 {

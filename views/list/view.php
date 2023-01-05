@@ -5,9 +5,9 @@ use yii\helpers\Url;
 use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
-/* @var $model wdmg\media\models\Media */
+/* @var $model mecsu\media\models\Media */
 
-$bundle = \wdmg\media\MediaAsset::register($this);
+$bundle = \mecsu\media\MediaAsset::register($this);
 
 $this->title = Yii::t('app/modules/media', 'View media');
 $this->params['breadcrumbs'][] = ['label' => Yii::t('app/modules/media', 'Media library'), 'url' => ['list/index']];

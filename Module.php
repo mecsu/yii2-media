@@ -1,6 +1,6 @@
 <?php
 
-namespace wdmg\media;
+namespace mecsu\media;
 
 /**
  * Yii2 Media library
@@ -8,7 +8,7 @@ namespace wdmg\media;
  * @category        Module
  * @version         1.0.6
  * @author          Alexsander Vyshnyvetskyy <alex.vyshnyvetskyy@gmail.com>
- * @link            https://github.com/wdmg/yii2-media
+ * @link            https://github.com/mecsu/yii2-media
  * @copyright       Copyright (c) 2019 - 2021 W.D.M.Group, Ukraine
  * @license         https://opensource.org/licenses/MIT Massachusetts Institute of Technology (MIT) License
  *
@@ -26,7 +26,7 @@ class Module extends BaseModule
     /**
      * {@inheritdoc}
      */
-    public $controllerNamespace = 'wdmg\media\controllers';
+    public $controllerNamespace = 'mecsu\media\controllers';
 
     /**
      * {@inheritdoc}

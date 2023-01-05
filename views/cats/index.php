@@ -7,9 +7,9 @@ use yii\widgets\Pjax;
 use wdmg\widgets\SelectInput;
 
 /* @var $this yii\web\View */
-/* @var $model wdmg\media\models\Categories */
+/* @var $model mecsu\media\models\Categories */
 
-$bundle = \wdmg\media\MediaAsset::register($this);
+$bundle = \mecsu\media\MediaAsset::register($this);
 
 $this->title = Yii::t('app/modules/media', 'Media categories');
 $this->params['breadcrumbs'][] = ['label' => Yii::t('app/modules/media', 'Media library'), 'url' => ['list/index']];
