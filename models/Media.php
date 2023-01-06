@@ -492,7 +492,7 @@ class Media extends ActiveRecord
                 // Check file not exists or generate unique filename
                 $i = 1;
                 while (file_exists($org_path) && $i < 999999) {
-                    $filename = $file->baseName . $file->baseName . "-$i" . "." . $file->extension;
+                    $filename = $file->baseName . "-$i" . "." . $file->extension;
                     $org_path = $savepath . "/" . $filename;
                     $web_path = $fullpath . "/" . $filename;
                     $i++;
