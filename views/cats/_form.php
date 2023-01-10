@@ -19,6 +19,7 @@ use wdmg\widgets\SelectInput;
             ]
         ]); ?>
         <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
+        <div class="hide">
         <?php
             $output = '';
             if (($categoryURL = $model->getCategoryUrl(true, true)) && $model->id) {
@@ -32,6 +33,7 @@ use wdmg\widgets\SelectInput;
                 echo Html::tag('label', Yii::t('app/modules/media', 'Category URL')) . Html::tag('fieldset', $output) . '<br/>';
 
         ?>
+        </div>
         <?= $form->field($model, 'alias')->textInput(['maxlength' => true]) ?>
         <?= $form->field($model, 'title')->textInput() ?>
         <?= $form->field($model, 'description')->textarea(['rows' => 3]) ?>

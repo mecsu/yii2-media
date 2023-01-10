@@ -36,13 +36,13 @@ $this->params['breadcrumbs'][] = Yii::t('app/modules/media', 'All categories');
                 'format' => 'raw',
                 'value' => function($model) {
                     $output = Html::tag('strong', $model->name);
-                    $output .= (($model->id === 1) ? " <span class=\"text-muted\">(" . Yii::t('app/modules/media', 'default') . ")</span>" : "");
-                    if (($categoryURL = $model->getCategoryUrl(true, true)) && $model->id) {
-                        $output .= '<br/>' . Html::a($model->getCategoryUrl(true, false), $categoryURL, [
-                                'target' => '_blank',
-                                'data-pjax' => 0
-                            ]);
-                    }
+                    // $output .= (($model->id === 1) ? " <span class=\"text-muted\">(" . Yii::t('app/modules/media', 'default') . ")</span>" : "");
+                    // if (($categoryURL = $model->getCategoryUrl(true, true)) && $model->id) {
+                    //     $output .= '<br/>' . Html::a($model->getCategoryUrl(true, false), $categoryURL, [
+                    //             'target' => '_blank',
+                    //             'data-pjax' => 0
+                    //         ]);
+                    // }
                     return $output;
                 }
             ],
@@ -120,6 +120,7 @@ $this->params['breadcrumbs'][] = Yii::t('app/modules/media', 'All categories');
                 'contentOptions' => [
                     'class' => 'text-center'
                 ],
+                'template' => '{update} {delete}',
                 'visibleButtons' => [
                     'update' => function ($model) {
                         if (Yii::$app->authManager && $this->context->module->moduleExist('rbac') && !Yii::$app->user->can('updatePosts', [

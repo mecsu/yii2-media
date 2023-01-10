@@ -92,8 +92,8 @@ $this->params['breadcrumbs'][] = $this->title;
                             ]);
                         }
 
-                        if (($mediaURL = $data->getMediaUrl(true, true)) && $data->id) {
-                            $output .= '<br/>' . Html::a($data->url, $mediaURL, [
+                        if (($mediaURL = $data->getSource(true, true)) && $data->id) {
+                            $output .= '<br/>' . Html::a($mediaURL, $mediaURL, [
                                 'target' => '_blank',
                                 'data-pjax' => 0
                             ]);
@@ -238,6 +238,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     'contentOptions' => [
                         'class' => 'text-center'
                     ],
+                    'template' => '{update} {delete}',
                     'visibleButtons' => [
                         'update' => function ($model) {
                             if (Yii::$app->authManager && $this->context->module->moduleExist('rbac') && !Yii::$app->user->can('updatePosts', [

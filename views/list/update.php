@@ -39,15 +39,15 @@ $this->params['breadcrumbs'][] = Yii::t('app/modules/media', 'Edit');
 
             <?php
             $output = '';
-            if (($mediaURL = $model->getMediaUrl(true, true)) && $model->id) {
-                $output = Html::a($model->getMediaUrl(true, false), $mediaURL, [
+            if (($mediaURL = $model->getSource(true, true)) && $model->id) {
+                $output = Html::a($mediaURL, $mediaURL, [
                     'target' => '_blank',
                     'data-pjax' => 0
                 ]);
             }
 
             if (!empty($output))
-                echo Html::tag('label', Yii::t('app/modules/media', 'Media URL')) . Html::tag('fieldset', $output) . '<br/>';
+                echo Html::tag('label', Yii::t('app/modules/media', 'Source URL')) . Html::tag('fieldset', $output) . '<br/>';
 
             ?>
 

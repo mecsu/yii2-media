@@ -243,14 +243,14 @@ class CatsController extends Controller
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
      */
-    public function actionView($id)
-    {
-        $model = $this->findModel($id);
-        return $this->render('view', [
-            'module' => $this->module,
-            'model' => $model
-        ]);
-    }
+    // public function actionView($id)
+    // {
+    //     $model = $this->findModel($id);
+    //     return $this->render('view', [
+    //         'module' => $this->module,
+    //         'model' => $model
+    //     ]);
+    // }
 
     /**
      * Deletes an existing Category.
